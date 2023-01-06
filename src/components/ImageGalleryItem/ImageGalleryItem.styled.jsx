@@ -16,8 +16,3 @@ export const GalleryImage = styled.img`
     cursor: zoom-in;
   }
 `;
-
-// export const ImageGalleryItem-image:hover {
-//   transform: scale(1.03);
-//   cursor: zoom-in;
-// }
