@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 
@@ -8,6 +9,11 @@ export class Searchbar extends Component {
   state = {
     searchName: '',
   };
+
+  static defaultProps = {
+    onSearchSubmit: PropTypes.func.isRequired,
+  };
+
   handleSearch = event => {
     this.setState({ searchName: event.currentTarget.value.toLowerCase() });
   };
