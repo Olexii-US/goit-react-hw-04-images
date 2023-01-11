@@ -12,3 +12,12 @@ export const UlImageGallery = styled.ul`
   margin-left: auto;
   margin-right: auto;
 `;
+
+export const Notification = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+`;
