@@ -65,12 +65,11 @@ export class ImageGallery extends Component {
 
         this.setState(prevState => ({
           images: prevState.images.concat(filteredData),
-          loading: false,
           totalHits: data.totalHits,
         }));
       })
       .catch(error => toast.error('Page not found', error))
-      .finally(this.setState({ loading: false }));
+      .finally(() => this.setState({ loading: false }));
   };
 
   loadMore = () => {
