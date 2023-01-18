@@ -23,23 +23,3 @@ export const App = () => {
 };
 
 export default App;
-
-// export class App extends Component {
-//   state = {
-//     searchName: '',
-//   };
-
-//   handleSearchSubmit = searchName => {
-//     this.setState({ searchName });
-//   };
-
-//   render() {
-//     return (
-//       <AppStyles>
-//         <Searchbar onSearchSubmit={this.handleSearchSubmit} />
-//         <ToastContainer autoClose={4000} />
-//         <ImageGallery searchName={this.state.searchName} />
-//       </AppStyles>
-//     );
-//   }
-// }
